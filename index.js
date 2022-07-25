@@ -48054,8 +48054,8 @@ let IndustrialViewer = (_class = (_temp = _class2 = class IndustrialViewer {
    *
    * @example
    * ```js
-   * import IndustrialViewer from '@wg/industrial-viewer';
-   * import extension from '@wg/industrial-viewer/extensions/[extentionName]';
+   * import IndustrialViewer from '@kamotive/industrial-viewer';
+   * import extension from '@kamotive/industrial-viewer/extensions/[extentionName]';
    *
    * IndustrialViewer.registerExtension(extention);
    * ```
@@ -48149,7 +48149,7 @@ let IndustrialViewer = (_class = (_temp = _class2 = class IndustrialViewer {
    *
    * @remarks
    * There are several presets with predefined options.
-   * Presets available from `'@wg/industrial-viewer/presets/[presetName]'`;
+   * Presets available from `'@kamotive/industrial-viewer/presets/[presetName]'`;
    * Available presets: `'default'` `'horizon'` `'sky'` `'street'` `'parking'`.
    *
    * @example
@@ -48170,7 +48170,7 @@ let IndustrialViewer = (_class = (_temp = _class2 = class IndustrialViewer {
    * @example
    * Use preset
    * ```js
-   * import horizonPreset from '@wg/industrial-viewer/presets/horizon';
+   * import horizonPreset from '@kamotive/industrial-viewer/presets/horizon';
    *
    * await widget3d.setOptions(horizonPreset);
    * ```
@@ -48762,8 +48762,8 @@ let IndustrialViewer = (_class = (_temp = _class2 = class IndustrialViewer {
    *
    * @example
    * ```js
-   * import IndustrialViewer from '@wg/industrial-viewer';
-   * import SentryExtension from '@wg/industrial-viewer/extensions/sentry';
+   * import IndustrialViewer from '@kamotive/industrial-viewer';
+   * import SentryExtension from '@kamotive/industrial-viewer/extensions/sentry';
    *
    * IndustrialViewer.registerExtension(SentryExtension);
    * const widget3d = new IndustrialViewer();
@@ -58394,7 +58394,7 @@ module.exports = "#pragma attribute(position, float, POSITION, 0);\n\n#ifdef GLE
 /* 90 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"name\":\"@wg/industrial-viewer\",\"version\":\"6.0.0\",\"private\":true,\"main\":\"dist/index.js\",\"files\":[\"dist/index.*(js|d.ts)\",\"dist/presets/*.*(js|d.ts)\",\"dist/extensions/*.*(js|d.ts)\",\"dist/tsdoc-metadata.json\",\"dist/*.md\"],\"engines\":{\"node\":\">=12.14.1\"},\"scripts\":{\"start\":\"gulp serve\",\"build\":\"gulp build\",\"clean:dist-dts\":\"rimraf dist-dts/\",\"clean:dist-docs-md\":\"rimraf dist-docs-md/\",\"generate:dts:tsc\":\"npm run clean:dist-dts && tsc --emitDeclarationOnly --project tsconfig.json --declaration --outDir dist-dts\",\"generate:dts\":\"npm run generate:dts:tsc && node bin/dts-creator.js\",\"generate:docs:md\":\"npm run clean:dist-docs-md && npm run generate:dts && api-documenter markdown -i docs-report -o dist-docs-md\",\"generate:docs:html\":\"npm run generate:docs:md && gulp docs\",\"generate:docs:html:only\":\"npm run generate:docs:md && gulp docs:only\",\"build:package\":\"gulp build:package && npm run generate:dts\",\"build:docs\":\"gulp docs\",\"link\":\"npm -C ../../ run link\",\"bootstrap\":\"npm -C ../../ run bootstrap\",\"test:unit:dev\":\"jest --watch\",\"test:unit:ci\":\"jest\",\"test-dev\":\"cross-env VIS_OS_NAME_OVERRIDE=Linux testcafe chrome test/functional/tests/**/**/*.js -s screenshots --live\",\"test-dev:fast\":\"cross-env VIS_OS_NAME_OVERRIDE=Linux testcafe -c 4 chrome test/functional/tests/**/**/*.js -s screenshots --live\",\"test-dev:remote\":\"cross-env IMAGE_COMPARE_SKIP=true testcafe remote test/functional/tests/**/**/*.js -s screenshots --live --qr-code\",\"test-dev:generate\":\"cross-env VIS_GENERATE_NEW_ONLY=true VIS_OS_NAME_OVERRIDE=Linux npm run test-dev\",\"test-dev:safari\":\"testcafe safari test/functional/tests/**/**/*.js -s screenshots --live\",\"test-ci\":\"cross-env CI=true testcafe chrome,firefox -c 6 test/functional/tests/**/**/*.js -s path=screenshots -r teamcity --quarantine-mode\",\"test-ci-windows\":\"cross-env CI=true testcafe chrome,firefox,edge test/functional/tests/**/**/*.js -s screenshots -r teamcity --quarantine-mode\",\"copy-test-assets\":\"gulp copy:test-assets\",\"vis-test-generate\":\"VIS_GENERATE_NEW_ONLY=true testcafe chrome,firefox test/functional/tests/**/**/*.js -s screenshots --fixture-meta vis=true\",\"vis-test-generate-ci\":\"VIS_GENERATE_NEW_ONLY=true testcafe chrome,firefox -c 2 test/functional/tests/**/**/*.js -s screenshots --fixture-meta vis=true -r teamcity\",\"vis-test-generate-windows-ci\":\"cross-env VIS_GENERATE=true testcafe chrome,firefox,edge test/functional/tests/**/**/*.js -s screenshots --fixture-meta vis=true -r teamcity\",\"benchmark\":\"testcafe chrome test/benchmark/**/**/*.js -r teamcity --app \\\"http-server ../examples/dist\\\"\",\"benchmark-dev\":\"testcafe chrome test/benchmark/**/**/*.js --live\",\"benchmark-dev:generate\":\"cross-env VIS_GENERATE_NEW_ONLY=true npm run benchmark-dev\",\"deploy:docs\":\"rsync -av dist-docs/ wgdemos@b3.webgears3d.com:/mnt/b3-volume/b3/industrial-viewer/\",\"publish:package\":\"npm run bootstrap && npm run build:package && cd dist && npm publish\",\"publish:docs\":\"npm run generate:docs:html && npm run deploy:docs\",\"create-edges\":\"node ./bin/edge-creator.js\"},\"devDependencies\":{\"@sentry/browser\":\"^5.18.0\",\"@wg/api-file-upload\":\"^1.0.0\",\"@wg/industrial-testcafe-helpers\":\"^1.0.0\",\"@wg/measures\":\"^1.0.0\",\"del\":\"^2.2.2\",\"fs-readdir-recursive\":\"^1.1.0\",\"gulp\":\"^4.0.2\",\"gulp-gzip\":\"^1.2.0\",\"gulp-load-plugins\":\"^1.2.0\",\"gulp-rsync\":\"0.0.5\",\"gulp-useref\":\"^3.0.5\",\"gulp-util\":\"^3.0.8\",\"ip\":\"^1.1.5\",\"merge-stream\":\"^2.0.0\",\"minimatch\":\"^3.0.4\",\"mobx\":\"^4.15.7\",\"mobx-react-lite\":\"^2.0.7\",\"objectmodel\":\"^4.2.2\",\"wg-fps-stats\":\"^5.0.2\",\"zip-a-folder\":\"0.0.10\"},\"jest\":{\"verbose\":true,\"testMatch\":[\"**/test/unit/**/*.js\",\"**/?(*.)+(spec|test).js\"],\"transform\":{\"^.+\\\\.(js|ts)$\":\"ts-jest\"},\"transformIgnorePatterns\":[],\"reporters\":[\"default\",\"jest-teamcity\"]}}");
+module.exports = JSON.parse("{\"name\":\"@kamotive/industrial-viewer\",\"version\":\"6.0.0\",\"private\":true,\"main\":\"dist/index.js\",\"files\":[\"dist/index.*(js|d.ts)\",\"dist/presets/*.*(js|d.ts)\",\"dist/extensions/*.*(js|d.ts)\",\"dist/tsdoc-metadata.json\",\"dist/*.md\"],\"engines\":{\"node\":\">=12.14.1\"},\"scripts\":{\"start\":\"gulp serve\",\"build\":\"gulp build\",\"clean:dist-dts\":\"rimraf dist-dts/\",\"clean:dist-docs-md\":\"rimraf dist-docs-md/\",\"generate:dts:tsc\":\"npm run clean:dist-dts && tsc --emitDeclarationOnly --project tsconfig.json --declaration --outDir dist-dts\",\"generate:dts\":\"npm run generate:dts:tsc && node bin/dts-creator.js\",\"generate:docs:md\":\"npm run clean:dist-docs-md && npm run generate:dts && api-documenter markdown -i docs-report -o dist-docs-md\",\"generate:docs:html\":\"npm run generate:docs:md && gulp docs\",\"generate:docs:html:only\":\"npm run generate:docs:md && gulp docs:only\",\"build:package\":\"gulp build:package && npm run generate:dts\",\"build:docs\":\"gulp docs\",\"link\":\"npm -C ../../ run link\",\"bootstrap\":\"npm -C ../../ run bootstrap\",\"test:unit:dev\":\"jest --watch\",\"test:unit:ci\":\"jest\",\"test-dev\":\"cross-env VIS_OS_NAME_OVERRIDE=Linux testcafe chrome test/functional/tests/**/**/*.js -s screenshots --live\",\"test-dev:fast\":\"cross-env VIS_OS_NAME_OVERRIDE=Linux testcafe -c 4 chrome test/functional/tests/**/**/*.js -s screenshots --live\",\"test-dev:remote\":\"cross-env IMAGE_COMPARE_SKIP=true testcafe remote test/functional/tests/**/**/*.js -s screenshots --live --qr-code\",\"test-dev:generate\":\"cross-env VIS_GENERATE_NEW_ONLY=true VIS_OS_NAME_OVERRIDE=Linux npm run test-dev\",\"test-dev:safari\":\"testcafe safari test/functional/tests/**/**/*.js -s screenshots --live\",\"test-ci\":\"cross-env CI=true testcafe chrome,firefox -c 6 test/functional/tests/**/**/*.js -s path=screenshots -r teamcity --quarantine-mode\",\"test-ci-windows\":\"cross-env CI=true testcafe chrome,firefox,edge test/functional/tests/**/**/*.js -s screenshots -r teamcity --quarantine-mode\",\"copy-test-assets\":\"gulp copy:test-assets\",\"vis-test-generate\":\"VIS_GENERATE_NEW_ONLY=true testcafe chrome,firefox test/functional/tests/**/**/*.js -s screenshots --fixture-meta vis=true\",\"vis-test-generate-ci\":\"VIS_GENERATE_NEW_ONLY=true testcafe chrome,firefox -c 2 test/functional/tests/**/**/*.js -s screenshots --fixture-meta vis=true -r teamcity\",\"vis-test-generate-windows-ci\":\"cross-env VIS_GENERATE=true testcafe chrome,firefox,edge test/functional/tests/**/**/*.js -s screenshots --fixture-meta vis=true -r teamcity\",\"benchmark\":\"testcafe chrome test/benchmark/**/**/*.js -r teamcity --app \\\"http-server ../examples/dist\\\"\",\"benchmark-dev\":\"testcafe chrome test/benchmark/**/**/*.js --live\",\"benchmark-dev:generate\":\"cross-env VIS_GENERATE_NEW_ONLY=true npm run benchmark-dev\",\"deploy:docs\":\"rsync -av dist-docs/ wgdemos@b3.webgears3d.com:/mnt/b3-volume/b3/industrial-viewer/\",\"publish:package\":\"npm run bootstrap && npm run build:package && cd dist && npm publish\",\"publish:docs\":\"npm run generate:docs:html && npm run deploy:docs\",\"create-edges\":\"node ./bin/edge-creator.js\"},\"devDependencies\":{\"@sentry/browser\":\"^5.18.0\",\"@kamotive/api-file-upload\":\"^1.0.0\",\"@kamotive/industrial-testcafe-helpers\":\"^1.0.0\",\"@kamotive/measures\":\"^1.0.0\",\"del\":\"^2.2.2\",\"fs-readdir-recursive\":\"^1.1.0\",\"gulp\":\"^4.0.2\",\"gulp-gzip\":\"^1.2.0\",\"gulp-load-plugins\":\"^1.2.0\",\"gulp-rsync\":\"0.0.5\",\"gulp-useref\":\"^3.0.5\",\"gulp-util\":\"^3.0.8\",\"ip\":\"^1.1.5\",\"merge-stream\":\"^2.0.0\",\"minimatch\":\"^3.0.4\",\"mobx\":\"^4.15.7\",\"mobx-react-lite\":\"^2.0.7\",\"objectmodel\":\"^4.2.2\",\"wg-fps-stats\":\"^5.0.2\",\"zip-a-folder\":\"0.0.10\"},\"jest\":{\"verbose\":true,\"testMatch\":[\"**/test/unit/**/*.js\",\"**/?(*.)+(spec|test).js\"],\"transform\":{\"^.+\\\\.(js|ts)$\":\"ts-jest\"},\"transformIgnorePatterns\":[],\"reporters\":[\"default\",\"jest-teamcity\"]}}");
 
 /***/ }),
 /* 91 */
@@ -96037,7 +96037,7 @@ class explode_Explode {
   }
 
 }
-// CONCATENATED MODULE: /home/kirill/projects/industrial/node_modules/@wg/edge-creator/src/math.ts
+// CONCATENATED MODULE: /home/kirill/projects/industrial/node_modules/@kamotive/edge-creator/src/math.ts
 function math_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 class math_Vector3 {
@@ -96123,7 +96123,7 @@ class math_Vector3 {
 }
 
 
-// CONCATENATED MODULE: /home/kirill/projects/industrial/node_modules/@wg/edge-creator/src/index.ts
+// CONCATENATED MODULE: /home/kirill/projects/industrial/node_modules/@kamotive/edge-creator/src/index.ts
 
 const degToRad = Math.PI / 180;
 
@@ -96227,7 +96227,7 @@ const getEdgeIndices = (() => {
 })();
 
 
-// CONCATENATED MODULE: /home/kirill/projects/industrial/node_modules/@wg/edge-creator/browser/utils.ts
+// CONCATENATED MODULE: /home/kirill/projects/industrial/node_modules/@kamotive/edge-creator/browser/utils.ts
 
 
 
@@ -96366,7 +96366,7 @@ function traverseNode(node, callback) {
 }
 
 
-// CONCATENATED MODULE: /home/kirill/projects/industrial/node_modules/@wg/edge-creator/browser/helpers.ts
+// CONCATENATED MODULE: /home/kirill/projects/industrial/node_modules/@kamotive/edge-creator/browser/helpers.ts
 
 
 let FilterDecision;
@@ -96564,7 +96564,7 @@ function getMeshesStores(targetNode, material, filter = helpers_approveAll) {
     meshesExtraData
   };
 }
-// CONCATENATED MODULE: /home/kirill/projects/industrial/node_modules/@wg/edge-creator/browser/index.ts
+// CONCATENATED MODULE: /home/kirill/projects/industrial/node_modules/@kamotive/edge-creator/browser/index.ts
 
 
 

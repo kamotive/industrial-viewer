@@ -394,8 +394,8 @@ declare class IndustrialViewer {
      *
      * @example
      * ```js
-     * import IndustrialViewer from '@wg/industrial-viewer';
-     * import extension from '@wg/industrial-viewer/extensions/[extentionName]';
+     * import IndustrialViewer from '@kamotive/industrial-viewer';
+     * import extension from '@kamotive/industrial-viewer/extensions/[extentionName]';
      *
      * IndustrialViewer.registerExtension(extention);
      * ```
@@ -447,7 +447,7 @@ declare class IndustrialViewer {
      *
      * @remarks
      * There are several presets with predefined options.
-     * Presets available from `'@wg/industrial-viewer/presets/[presetName]'`;
+     * Presets available from `'@kamotive/industrial-viewer/presets/[presetName]'`;
      * Available presets: `'default'` `'horizon'` `'sky'` `'street'` `'parking'`.
      *
      * @example
@@ -468,7 +468,7 @@ declare class IndustrialViewer {
      * @example
      * Use preset
      * ```js
-     * import horizonPreset from '@wg/industrial-viewer/presets/horizon';
+     * import horizonPreset from '@kamotive/industrial-viewer/presets/horizon';
      *
      * await widget3d.setOptions(horizonPreset);
      * ```
@@ -780,8 +780,8 @@ declare class IndustrialViewer {
      *
      * @example
      * ```js
-     * import IndustrialViewer from '@wg/industrial-viewer';
-     * import SentryExtension from '@wg/industrial-viewer/extensions/sentry';
+     * import IndustrialViewer from '@kamotive/industrial-viewer';
+     * import SentryExtension from '@kamotive/industrial-viewer/extensions/sentry';
      *
      * IndustrialViewer.registerExtension(SentryExtension);
      * const widget3d = new IndustrialViewer();
