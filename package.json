@@ -1,0 +1,45 @@
+{
+  "_args": [
+    [
+      "@kamotive/industrial-viewer@6.0.0"
+    ]
+  ],
+  "_from": "@kamotive/industrial-viewer@6.0.0",
+  "_id": "@kamotive/industrial-viewer@6.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-SPNvSrGZLVL914wbx9febvS4Xc21czUT+LcwiYctz9a1HQzQGo82piWvrLN1oZ5Bs8fRq+PplcW18RqPBRiOPA==",
+  "_location": "/@kamotive/industrial-viewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@kamotive/industrial-viewer@6.0.0",
+    "name": "@kamotive/industrial-viewer",
+    "escapedName": "@kamotive%2findustrial-viewer",
+    "scope": "@kamotive",
+    "rawSpec": "6.0.0",
+    "saveSpec": null,
+    "fetchSpec": "6.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "_spec": "6.0.0",
+  "description": "- [CHANGELOG](CHANGELOG.md) - [API](API.md)",
+  "engines": {
+    "node": ">=12.14.1"
+  },
+  "files": [
+    "index.*(js|d.ts)",
+    "presets/*.*(js|d.ts)",
+    "extensions/*.*(js|d.ts)",
+    "tsdoc-metadata.json",
+    "*.md"
+  ],
+  "main": "index.js",
+  "name": "@kamotive/industrial-viewer",
+  "version": "6.0.0"
+}
